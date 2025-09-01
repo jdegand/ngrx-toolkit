@@ -10,7 +10,7 @@
     "vite.config.mts",
     "src/**/*.test.ts",
     "src/**/*.spec.ts",
-    "src/**/*.d.ts"
-  ],
-  "exclude": ["apps/demo/e2e/**"]
+    "src/**/*.d.ts",
+    "e2e/**/*.spec.ts"
+  ]
 }

@@ -66,6 +66,7 @@
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@types/node": "18.16.9",
+    "@vitest/browser": "^3.2.4",
     "angular-eslint": "20.1.1",
     "autoprefixer": "^10.4.19",
     "eslint": "^9.8.0",
