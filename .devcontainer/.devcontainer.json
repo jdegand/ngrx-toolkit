@@ -1,34 +1,33 @@
+// For format details, see https://aka.ms/devcontainer.json.
 {
   "name": "ngrx-toolkit",
-  "image": "mcr.microsoft.com/devcontainers/typescript-node:20",
+  "image": "mcr.microsoft.com/devcontainers/node:20-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/pnpm:1": {
       "version": "10"
-    },
-    "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
     }
   },
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "angular.ng-template",
-        "nrwl.angular-console",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "orta.vscode-jest",
-        "ms-playwright.playwright"
-      ]
-    }
-  },
-  "postCreateCommand": "pnpm install && pnpm prepare",
-  "forwardPorts": [4200],
+  "forwardPorts": [
+    4200
+  ],
   "portsAttributes": {
     "4200": {
       "label": "Angular App",
       "onAutoForward": "openPreview"
     }
+  },
+  "onCreateCommand": "sudo cp .devcontainer/welcome-message.txt /usr/local/etc/vscode-dev-containers/first-run-notice.txt",
+  "postCreateCommand": "pnpm install && pnpm prepare",
+  "waitFor": "postCreateCommand",
+  "customizations": {
+    "extensions": [
+      "angular.ng-template",
+      "nrwl.angular-console",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "orta.vscode-jest",
+      "ms-playwright.playwright"
+    ]
   },
   "remoteUser": "node"
 }
