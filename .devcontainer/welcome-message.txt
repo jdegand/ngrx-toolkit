@@ -1,0 +1,10 @@
+👋 Welcome to your NgRx Toolkit Codespace!
+
+✅ Node.js 20 and PNPM 10 are ready.
+📦 All dependencies installed via pnpm.
+🚀 Run `pnpm start` to launch the demo app.
+🧪 Use `pnpm test:all` or `pnpm test:e2e` to run tests.
+🧹 Format check: `pnpm format:check`
+🔍 Lint everything: `pnpm lint:all`
+
+Happy coding!
